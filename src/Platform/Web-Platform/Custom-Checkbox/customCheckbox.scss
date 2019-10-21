@@ -1,0 +1,138 @@
+/* The container */
+.checkbox-container-web {
+    position: relative;
+    padding: 12px 16px;
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &.non-check {
+        // cursor: not-allowed;
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:after {
+            left: 6px !important;
+            top: 1px !important;
+        }
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        border-radius: 3px;
+        border: 1.8px solid #77899B;
+    }
+
+    .text-label {
+        position: absolute;
+        padding-left: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #1F2D3D !important;
+        top: 0%;
+        width: 90%;
+    }
+}
+
+
+/* On mouse-over, add a grey background color */
+.checkbox-container-web {
+    /* When the checkbox is checked, add a blue background */
+
+    .checked {
+        background-color: #41b6ac !important;
+        border-radius: 3px;
+        border: 1px solid #41b6ac !important;
+
+    }
+
+    &:hover input~.checkmark {
+        border-radius: 3px;
+    }
+
+    /* Show the checkmark when checked */
+    .checked:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .checkmark:after {
+        left: 6px;
+        top: 2px;
+        width: 6px;
+        height: 11px;
+        border: solid white;
+        border-radius: 2px;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+//
+.round {
+    position: absolute;
+}
+
+.round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 16px;
+}
+
+.round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 5px;
+    left: 2px;
+    opacity: 0;
+    position: absolute;
+    top: 3px;
+    transform: rotate(-45deg);
+    width: 10px;
+}
+
+.round input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked+label {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+}
+
+.round input[type="checkbox"]:checked+label:after {
+    opacity: 1;
+}

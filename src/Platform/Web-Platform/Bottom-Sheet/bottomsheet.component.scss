@@ -1,0 +1,28 @@
+.ReactSwipeableBottomSheet--open {
+    // border-top-left-radius: 20px;
+    // border-top-right-radius: 20px;
+    .cancel-block {
+        text-align: center;
+        margin: 6px;
+
+        button {
+            width: 76px;
+            height: 6px;
+            border-radius: 5px;
+            background: #141415;
+        }
+    }
+
+    .component-block {
+    }
+}
+
+.bottom-modal {
+    div {
+        z-index: 500;
+
+        div {
+            z-index: unset !important;
+        }
+    }
+}

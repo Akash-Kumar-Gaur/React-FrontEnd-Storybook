@@ -1,0 +1,33 @@
+.select-buttons-container {
+    .select-buttons-wrapper {
+        .select-button {
+            display: flex;
+            ;
+            justify-content: center;
+            align-items: center;
+
+            .option-wrapper {
+                cursor: pointer;
+                margin: 8px 6px;
+                min-width: 100px;
+                border: 1px solid #b8c1cb;
+                border-radius: 6px;
+                background-color: #fff;
+                color: #1f2d3d;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: center;
+                padding: 7px 0;
+            }
+
+            .active-button {
+                border: 1px solid #41b6ac;
+                border-radius: 6px;
+                background-color: #fff;
+                color: #41b6ac;
+                font-weight: 500;
+            }
+        }
+    }
+}

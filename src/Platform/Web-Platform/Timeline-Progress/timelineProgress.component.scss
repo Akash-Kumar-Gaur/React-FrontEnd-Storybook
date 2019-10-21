@@ -1,0 +1,173 @@
+.timeline-container {
+    // min-width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div:first-of-type {
+        div:first-of-type {
+            div:first-of-type {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    div:last-of-type {
+        div:last-of-type {
+            div:first-of-type {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .timeline-processes {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .process {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+
+            &:last-child {
+                &:nth-child(1) {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            .process-status {
+                width: 24px;
+                height: 24px;
+                background: white !important;
+                border: 1px solid #77988b;
+                border-radius: 12px;
+                margin-bottom: 16px;
+                z-index: 10;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .fa-check {
+                    color: #fafafa;
+                    z-index: 10;
+                }
+
+                .fa-circle {
+                    font-size: 10px;
+                    z-index: 10;
+                }
+
+
+            }
+
+            .process-name {
+                color: #77899b !important;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 17px;
+                margin-bottom: 5px;
+            }
+
+            .process-message {
+                font-style: italic;
+            }
+
+            .pending {
+                background: #D5DEE4;
+
+                &::after {
+                    height: 2px;
+                    display: block;
+                    background: #D5DEE4;
+                    content: '';
+                    width: 50%;
+                    /* margin-top: 16px; */
+                    position: absolute;
+                    /* padding-top: 20px; */
+                    top: 15%;
+                    left: 5.5%;
+                }
+
+                &::before {
+                    height: 2px;
+                    display: block;
+                    background: #D5DEE4;
+                    content: '';
+                    width: 50%;
+                    /* margin-top: 16px; */
+                    position: absolute;
+                    /* padding-top: 20px; */
+                    top: 15%;
+                    left: -50%;
+                }
+
+            }
+
+            &:nth-child(1) {
+                &::before {
+                    display: none;
+                }
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+
+            &::after {
+                height: 2px;
+                display: block;
+                background: #1F2D3D;
+                content: '';
+                width: 50%;
+                /* margin-top: 16px; */
+                position: absolute;
+                /* padding-top: 20px; */
+                top: 15%;
+                left: 0%;
+            }
+
+            &::before {
+                height: 2px;
+                display: block;
+                background: #1F2D3D;
+                content: '';
+                width: 50%;
+                /* margin-top: 16px; */
+                position: absolute;
+                /* padding-top: 20px; */
+                top: 15%;
+                left: -50%;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 836px) {
+    .timeline-container {
+        .timeline-processes {
+            .process {
+                .pending {
+                    &::after {
+                        left: 7.9%;
+                    }
+                }
+            }
+        }
+    }
+
+}
