@@ -4,24 +4,24 @@ This storybook project contains components that can be imported directly into pr
 
 ### This project contains
  1. Form Components
-     * AwesomeButton
-     * Switch
-     * Slider
-     * Checkbox
-     * Datepicker
-     * Selectbox
+    * AwesomeButton
+    * Switch
+    * Slider
+    * Checkbox
+    * Datepicker
+    * Selectbox
   
  2. Reusable Components
-     * SelectButtons
-     * BottomSheet
-     * Modal
-     * Placeholder
-     * React Tabs
-     * Progress Timeline
-  
+    * SelectButtons
+    * BottomSheet
+    * Modal
+    * Placeholder
+    * React Tabs
+    * Progress Timeline
+ 
  3. Generic Components
-     * Pagination
-     * Expandable Table Wrapper
+    * Pagination
+    * Expandable Table Wrapper
 
 ### To run this project
 1. Clone into local directory
