@@ -6,6 +6,9 @@
 ### To run this project
 1. Clone into local directory
 2. Run `npm i` to install required packages
+```bash
+`npm i`
+```
 3. Run `npm run storybook` to start server
 
 visit `localhost:6006`
