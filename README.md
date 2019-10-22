@@ -1,3 +1,7 @@
+## React-FrontEnd-Storybook
+
+This storybook project contains components that can be imported directly into project and can be used by passing props.
+
 ### This project contains
  1. Form Components
  2. Reusable Components
