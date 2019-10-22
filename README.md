@@ -7,9 +7,12 @@
 1. Clone into local directory
 2. Run `npm i` to install required packages
 ```bash
-`npm i`
+npm i
 ```
 3. Run `npm run storybook` to start server
+```bash
+npm run storybook
+```
 
 visit `localhost:6006`
 
