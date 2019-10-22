@@ -36,7 +36,10 @@ function renderDemoComponent() {
             // onClick={() => Modal.close()}
             style={{ padding: '15px' }}
         >
-            Hi from demo component
+            <h1>Hi from demo component</h1>
+            <br />
+            <br />
+            <h3>Content in bottomsheetconfirmText</h3>
         </div>
     )
 }

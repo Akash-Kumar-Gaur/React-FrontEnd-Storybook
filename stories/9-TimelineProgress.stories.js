@@ -35,6 +35,10 @@ storiesOf('Resuable-Components/TimelineProgress', module)
             completed: 1,
             message: 'Completed'
         }, {
+            name: 'ID Verification',
+            completed: 1,
+            message: 'Done'
+        }, {
             name: 'Bank Verification',
             completed: 0,
             message: 'Pending'

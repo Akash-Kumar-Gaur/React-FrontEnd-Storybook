@@ -17,7 +17,7 @@ export class DatepickerPWA extends Component {
     }
 
     handleCancel = () => {
-        console.log('state', this.state);
+        // console.log('state', this.state);
         this.setState({ isOpen: false });
     }
 
@@ -33,8 +33,8 @@ export class DatepickerPWA extends Component {
     }
 
     render() {
-        const { callback, confirmText, step, key } = this.props;
-        const { time, isOpen, value } = this.state;
+        const { callback, step, key } = this.props;
+        const { value } = this.state;
 
         const dateConfig = {
             'month': {

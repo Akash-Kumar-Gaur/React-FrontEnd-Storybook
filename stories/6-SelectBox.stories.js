@@ -14,19 +14,22 @@ import { SelectBox } from '../src/Platform/Web-Platform/Select-Box/selectBox.com
 const options = [
     { value: 'chocolateValue', label: 'Chocolate', id: 1 },
     { value: 'strawberryValue', label: 'Strawberry', id: 2 },
-    { value: 'vanillaValue', label: 'Vanilla', id: 3 }
+    { value: 'vanillaValue', label: 'Vanilla', id: 3 },
+    { value: 'appleValue', label: 'Apple', id: 4 },
+    { value: 'orangeValue', label: 'Orange', id: 5 },
+    { value: 'berryValue', label: 'Berry', id: 6 }
 ]
 
 const customStyles = {
     control: (base, state) => ({
         ...base,
-        height: '50px',
+        // height: '50px',
         width: '300px',
-        'minHeight': '55px',
-        'borderRadius': '6px !important',
-        'background': '#ffffff',
-        'border': '1px solid #bdbdbd70 !important',
-        'boxShadow': '0 1px 4px 0 rgba(0,0,0,.21)'
+        // 'minHeight': '55px',
+        // 'borderRadius': '6px !important',
+        'background': '#f4f5f7b8',
+        // 'border': '1px solid #bdbdbd70 !important',
+        // 'boxShadow': '0 1px 4px 0 rgba(0,0,0,.21)'
     }),
 };
 

@@ -8,6 +8,7 @@
     "@storybook/addon-knobs": "^5.2.4",
     "@storybook/addon-notes": "^5.2.4",
     "@storybook/addon-storysource": "^5.2.4",
+    "@storybook/theming": "^5.2.4",
     "antd": "^3.24.1",
     "common-js-util": "^0.1.38",
     "moment": "^2.24.0",

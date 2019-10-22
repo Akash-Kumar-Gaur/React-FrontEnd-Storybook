@@ -33,8 +33,8 @@ export class Datepicker extends Component {
     }
 
     render() {
-        const { callback, confirmText, step, key } = this.props;
-        const { time, isOpen, value } = this.state;
+        const { callback, step, key } = this.props;
+        const { value } = this.state;
 
         const dateConfig = {
             'month': {

@@ -23,7 +23,7 @@ storiesOf('Form-Components/AwesomeButton', module)
       ripple={boolean('ripple', false)}
       // action={action('clicked')}
       caption={text('text', 'Go to Second')}
-      action={linkTo('AwesomeButton', 'Second')}
+      action={linkTo('Form-Components/AwesomeButton', 'Second')}
     >
       {text('text', 'Go to "Second"')}
     </AwesomeButton>
@@ -38,7 +38,7 @@ storiesOf('Form-Components/AwesomeButton', module)
       ripple={boolean('ripple', false)}
       // action={action('clicked')}
       caption={text('text', 'Go to First')}
-      action={linkTo('AwesomeButton', 'First')}
+      action={linkTo('Form-Components/AwesomeButton', 'First')}
     >
       {text('text', 'Primary')}
     </AwesomeButton>
