@@ -19,7 +19,7 @@
     "react-dom": "^16.10.2",
     "react-mobile-datepicker": "^4.0.2",
     "react-placeholder": "^3.0.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "5.0.1",
     "react-select": "^3.0.8",
     "react-swipeable-bottom-sheet": "^1.1.1",
     "react-tabs": "^3.0.0",
@@ -57,7 +57,7 @@
     "@storybook/addon-links": "^5.2.4",
     "@storybook/addon-viewport": "^5.2.4",
     "@storybook/addons": "^5.2.4",
-    "@storybook/react": "^5.2.4",
+    "@storybook/react": "^7.0.9",
     "babel-loader": "^8.0.6",
     "react-app-rewired": "^2.1.3"
   }
